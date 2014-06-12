@@ -1,0 +1,22 @@
+[DEFAULT]
+git_gc = git gc "$@"
+git_update = git pull --ff-only "$@"
+jobs = 5
+lib = 
+    atwork() {
+	    host gateway-intranet.intecsoft.de >/dev/null
+    }
+include = cat ~/.config/mr/config.d/*
+
+[.config/vcsh/repo.d/mr.git]
+checkout = vcsh clone git@github.com:sedden/config-mr.git mr
+
+[.config/vcsh/repo.d/git.git]
+checkout = vcsh clone git@github.com:sedden/config-git.git git
+
+[.config/vcsh/repo.d/zsh.git]
+checkout = vcsh clone git@github.com:sedden/config-zsh.git zsh
+
+[.config/vcsh/repo.d/vim.git]
+checkout = vcsh clone git@github.com:sedden/config-vim.git vim
+
