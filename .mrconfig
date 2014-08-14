@@ -3,6 +3,7 @@ git_gc = git gc "$@"
 git_update = git pull --ff-only "$@"
 jobs = 5
 lib = 
+    . ~/.config/mr/lib.d/git.sh
     atwork() {
 	    host gateway-intranet.intecsoft.de >/dev/null
     }
