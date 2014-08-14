@@ -18,6 +18,29 @@ setup_gerrit() {
     fi
 }
 
+fix_remote_host() {
+    if [ $# != 2 ]; then
+        error "$MR_REPO: invoked fix_remote_host $*"
+        exit 1
+    fi
+
+    cd "$MR_REPO"
+    remote=$(git ls-remote --get-url)
+    if [[ $remote =~ $GIT_URL_REGEX ]]
+    then
+        proto="${BASH_REMATCH[2]}"
+        user="${BASH_REMATCH[4]}"
+        host="${BASH_REMATCH[5]}"
+        port="${BASH_REMATCH[6]}"
+        path="${BASH_REMATCH[7]}"
+
+        if [ "$host" == "$1" ] && [ -n "$user" ] && [ -n "$port" ]
+        then
+            git remote set-url origin $proto://$user@$2:$port$path
+        fi
+    fi
+}
+
 setup_email () {
     if [ $# != 1 ]; then
         error "$MR_REPO: invoked setup_email $*"
