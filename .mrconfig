@@ -2,12 +2,11 @@
 git_gc = git gc "$@"
 git_update = git pull --ff-only "$@"
 jobs = 5
-lib = 
-    . ~/.config/mr/lib.d/git.sh
-    atwork() {
-	    host gateway-intranet.intecsoft.de >/dev/null
-    }
-include = cat ~/.config/mr/config.d/*
+include = 
+    for f in ~/.config/mr/lib.d/* ; do
+        test -f $f && echo "lib = . $f"
+    done
+    cat ~/.config/mr/config.d/*
 
 [.config/vcsh/repo.d/mr.git]
 checkout = vcsh clone git@github.com:sedden/config-mr.git mr
