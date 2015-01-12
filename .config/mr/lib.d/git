@@ -54,3 +54,8 @@ setup_email () {
         info "Set user.email from ${existing:-(none)} to $1"
     fi
 }
+
+devbox() {
+    test "$PROJECT_HOME"
+}
+
