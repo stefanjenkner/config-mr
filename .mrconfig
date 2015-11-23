@@ -23,3 +23,6 @@ checkout = vcsh clone git@github.com:sedden/config-vim.git vim
 [.config/vcsh/repo.d/emacs.git]
 checkout = vcsh clone git@github.com:sedden/config-emacs.git emacs
 
+[.config/vcsh/repo.d/atom.git]
+checkout = vcsh clone git@github.com:sedden/config-atom.git atom
+
