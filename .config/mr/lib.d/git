@@ -55,7 +55,3 @@ setup_email () {
     fi
 }
 
-devbox() {
-    test "$PROJECT_HOME"
-}
-
