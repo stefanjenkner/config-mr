@@ -27,6 +27,10 @@ checkout = vcsh clone git@github.com:sedden/config-emacs.git emacs
 checkout = vcsh clone git@github.com:sedden/config-atom.git atom
 skip = ! osx
 
+[.config/vcsh/repo.d/vscode.git]
+checkout = vcsh clone git@github.com:sedden/config-vscode.git vscode
+skip = ! osx
+
 [.config/vcsh/repo.d/plex.git]
 checkout = vcsh clone git@github.com:sedden/config-plex.git plex
 skip = ! armv7l
