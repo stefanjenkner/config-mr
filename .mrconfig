@@ -31,7 +31,3 @@ skip = ! osx
 checkout = vcsh clone git@github.com:sedden/config-vscode.git vscode
 skip = ! osx
 
-[.config/vcsh/repo.d/plex.git]
-checkout = vcsh clone git@github.com:sedden/config-plex.git plex
-skip = ! armv7l
-
