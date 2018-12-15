@@ -39,3 +39,7 @@ push = :
 checkout = git clone 'https://github.com/pyenv/pyenv.git' .pyenv
 push = :
 
+[.rbenv]
+checkout = git clone 'https://github.com/rbenv/rbenv.git' .rbenv
+push = :
+
