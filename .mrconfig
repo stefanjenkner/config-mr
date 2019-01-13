@@ -17,6 +17,9 @@ checkout = vcsh clone git@github.com:sedden/config-git.git git
 [.config/vcsh/repo.d/zsh.git]
 checkout = vcsh clone git@github.com:sedden/config-zsh.git zsh
 
+[.config/vcsh/repo.d/tmux.git]
+checkout = vcsh clone git@github.com:sedden/config-tmux.git tmux
+
 [.config/vcsh/repo.d/vim.git]
 checkout = vcsh clone git@github.com:sedden/config-vim.git vim
 
