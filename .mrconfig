@@ -9,29 +9,29 @@ include =
 	   cat ~/.config/mr/config.d/*
 
 [.config/vcsh/repo.d/mr.git]
-checkout = vcsh clone git@github.com:sedden/config-mr.git mr
+checkout = vcsh clone git@github.com:stefanjenkner/config-mr.git mr
 
 [.config/vcsh/repo.d/git.git]
-checkout = vcsh clone git@github.com:sedden/config-git.git git
+checkout = vcsh clone git@github.com:stefanjenkner/config-git.git git
 
 [.config/vcsh/repo.d/zsh.git]
-checkout = vcsh clone git@github.com:sedden/config-zsh.git zsh
+checkout = vcsh clone git@github.com:stefanjenkner/config-zsh.git zsh
 
 [.config/vcsh/repo.d/tmux.git]
-checkout = vcsh clone git@github.com:sedden/config-tmux.git tmux
+checkout = vcsh clone git@github.com:stefanjenkner/config-tmux.git tmux
 
 [.config/vcsh/repo.d/vim.git]
-checkout = vcsh clone git@github.com:sedden/config-vim.git vim
+checkout = vcsh clone git@github.com:stefanjenkner/config-vim.git vim
 
 [.config/vcsh/repo.d/emacs.git]
-checkout = vcsh clone git@github.com:sedden/config-emacs.git emacs
+checkout = vcsh clone git@github.com:stefanjenkner/config-emacs.git emacs
 
 [.config/vcsh/repo.d/atom.git]
-checkout = vcsh clone git@github.com:sedden/config-atom.git atom
+checkout = vcsh clone git@github.com:stefanjenkner/config-atom.git atom
 skip = ! osx
 
 [.config/vcsh/repo.d/vscode.git]
-checkout = vcsh clone git@github.com:sedden/config-vscode.git vscode
+checkout = vcsh clone git@github.com:stefanjenkner/config-vscode.git vscode
 skip = ! osx
 
 [.jenv]
