@@ -35,7 +35,11 @@ checkout = vcsh clone git@github.com:stefanjenkner/config-vscode.git vscode
 skip = ! osx
 
 [.jenv]
-checkout = git clone 'https://github.com/gcuisinier/jenv.git' .jenv
+checkout = git clone 'https://github.com/jenv/jenv.git' .jenv
+push = :
+
+[.nodenv]
+checkout = git clone 'https://github.com/nodenv/nodenv.git' .nodenv
 push = :
 
 [.pyenv]
