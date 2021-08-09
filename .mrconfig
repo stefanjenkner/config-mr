@@ -54,8 +54,11 @@ push = :
 checkout = git clone 'https://github.com/rbenv/ruby-build.git' ruby-build
 push = :
 
+[.tfenv]
+checkout = git clone 'https://github.com/tfutils/tfenv.git' .tfenv
+push = :
+
 [.cowsay]
 checkout = git clone 'https://github.com/bkendzior/cowfiles.git' .cowsay
 push = :
-
 
