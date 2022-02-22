@@ -42,6 +42,10 @@ push = :
 checkout = git clone 'https://github.com/nodenv/nodenv.git' .nodenv
 push = :
 
+[.nodenv/plugins/node-build]
+checkout = git clone 'https://github.com/nodenv/node-build.git' node-build
+push = :
+
 [.pyenv]
 checkout = git clone 'https://github.com/pyenv/pyenv.git' .pyenv
 push = :
