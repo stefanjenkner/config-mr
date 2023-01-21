@@ -23,13 +23,6 @@ checkout = vcsh clone git@github.com:stefanjenkner/config-tmux.git tmux
 [.config/vcsh/repo.d/vim.git]
 checkout = vcsh clone git@github.com:stefanjenkner/config-vim.git vim
 
-[.config/vcsh/repo.d/emacs.git]
-checkout = vcsh clone git@github.com:stefanjenkner/config-emacs.git emacs
-
-[.config/vcsh/repo.d/atom.git]
-checkout = vcsh clone git@github.com:stefanjenkner/config-atom.git atom
-skip = ! osx
-
 [.config/vcsh/repo.d/vscode.git]
 checkout = vcsh clone git@github.com:stefanjenkner/config-vscode.git vscode
 skip = ! osx
