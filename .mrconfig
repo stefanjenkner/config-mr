@@ -47,6 +47,10 @@ push = :
 checkout = git clone 'https://github.com/tfutils/tfenv.git' .tfenv
 push = :
 
+[.goenv]
+checkout = git clone 'https://github.com/go-nv/goenv.git' .goenv
+push = :
+
 [.cowsay]
 checkout = git clone 'https://github.com/bkendzior/cowfiles.git' .cowsay
 push = :
