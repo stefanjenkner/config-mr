@@ -27,34 +27,6 @@ checkout = vcsh clone git@github.com:stefanjenkner/config-vim.git vim
 checkout = vcsh clone git@github.com:stefanjenkner/config-vscode.git vscode
 skip = ! osx
 
-[.jenv]
-checkout = git clone 'https://github.com/jenv/jenv.git' .jenv
-push = :
-
-[.nodenv]
-checkout = git clone 'https://github.com/nodenv/nodenv.git' .nodenv
-push = :
-
-[.nodenv/plugins/node-build]
-checkout = git clone 'https://github.com/nodenv/node-build.git' node-build
-push = :
-
-[.pyenv]
-checkout = git clone 'https://github.com/pyenv/pyenv.git' .pyenv
-push = :
-
-[.tfenv]
-checkout = git clone 'https://github.com/tfutils/tfenv.git' .tfenv
-push = :
-
-[.tgenv]
-checkout = git clone 'https://github.com/tgenv/tgenv.git' .tgenv
-push = :
-
-[.goenv]
-checkout = git clone 'https://github.com/go-nv/goenv.git' .goenv
-push = :
-
 [.cowsay]
 checkout = git clone 'https://github.com/bkendzior/cowfiles.git' .cowsay
 push = :
